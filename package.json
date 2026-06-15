@@ -1,6 +1,6 @@
 {
   "name": "@oricardopestana/ts-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "TypeScript utilities",
   "homepage": "https://github.com/oricardopestana/ts-utils#readme",
   "bugs": {
@@ -13,11 +13,23 @@
   "license": "MIT",
   "author": "Ricardo Pestana (https://github.com/oricardopestana)",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
     "test": "vitest run"
   },
-  "dependencies": {
+  "devDependencies": {
+    "typescript": "^5.9.3",
     "vitest": "^4.1.8"
   }
 }

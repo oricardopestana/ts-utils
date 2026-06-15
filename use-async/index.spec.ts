@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { useAsync } from "./index";
+import { useAsync } from "./index.js";
 
 describe("useAsync", () => {
   it("should return [data, null] when the promise resolves", async () => {
