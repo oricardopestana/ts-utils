@@ -35,9 +35,6 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": ["esbuild"]
-  },
   "devDependencies": {
     "typescript": "^5.9.3",
     "vitepress": "2.0.0-alpha.17",
