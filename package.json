@@ -30,10 +30,14 @@
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build",
-    "test": "vitest run"
+    "test": "vitest run",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
     "typescript": "^5.9.3",
+    "vitepress": "2.0.0-alpha.17",
     "vitest": "^4.1.8"
   }
 }
