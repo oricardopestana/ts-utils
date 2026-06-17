@@ -1,3 +1,3 @@
 export type Prettify<T> = {
-  [K in key of T]: T[K];
+  [K in keyof T]: T[K];
 } & {};
