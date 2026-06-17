@@ -8,21 +8,21 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Utility types', link: '/utility-types' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'ts-utils',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Utility types', link: '/utility-types' }
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/oricardopestana/ts-utils' },
+      { icon: 'npm', link: 'https://www.npmjs.com/package/@oricardopestana/ts-utils' }
     ]
   }
 })
