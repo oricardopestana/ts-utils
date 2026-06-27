@@ -10,6 +10,9 @@ hero:
     - theme: brand
       text: Utility types
       link: /utility-types
+    - theme: alt
+      text: Date utils
+      link: /date-utils/date-utils
 
 # features:
 #   - title: Feature A

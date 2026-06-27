@@ -36,6 +36,8 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
+    "@vitest/coverage-v8": "4.1.8",
+    "@vitest/ui": "4.1.8",
     "typescript": "^5.9.3",
     "vitepress": "2.0.0-alpha.17",
     "vitest": "^4.1.8"
