@@ -9,16 +9,25 @@ hero:
   actions:
     - theme: brand
       text: Utility types
-      link: /utility-types
+      link: /ts-utils/utility-types
+    - theme: alt
+      text: Utility functions
+      link: /utility-functions/use-async
     - theme: alt
       text: Date utils
       link: /date-utils/date-utils
 
-# features:
-#   - title: Feature A
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature B
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature C
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+features:
+  - title: Utility types
+    details: Types that might come in handy
+    link: '/ts-utils/utility-types'
+    linkText: 'Check all the utility types'
+  - title: Utility Functions
+    details: Useful functions
+    link: '/utility-functions/use-async'
+    linkText: 'Check all the utility functions'
+  - title: Date utils
+    details: Utilities for working with dates
+    link: '/date-utils/date-utils'
+    linkText: 'Check all the date utils'
 ---
