@@ -2,6 +2,17 @@ import { DateAsStringOptions } from "./date-types.date-utils.js";
 
 const TOKEN_RE = /(YYYY|yyyy|YY|yy|MM|DD|dd|HH|hh|mm|SS|ss|M|D|d|H|h|m|S|s)/g;
 
+/**
+ * Formats a date according to a token-based format string.
+ *
+ * @param date - A date object or date string.
+ * @param options - Format configuration.
+ * @returns The formatted date string.
+ *
+ * @example
+ * getDateAsString(new Date(2024, 0, 1), { format: "YYYY-MM-DD" })
+ * // "2024-01-01"
+ */
 export function getDateAsString(date: string | Date, options: DateAsStringOptions): string {
   const d = date instanceof Date ? date : new Date(date);
   if (isNaN(d.getTime())) throw new Error("Invalid date");
@@ -46,6 +57,19 @@ export function getDateAsString(date: string | Date, options: DateAsStringOption
   });
 }
 
+/**
+ * Parses a date string into a Date object using an optional format.
+ *
+ * @param date - The date string to parse.
+ * @param options - Optional format configuration. When omitted, the native Date constructor is used.
+ * @returns The parsed Date object.
+ *
+ * @throws Will throw if the date string cannot be parsed.
+ *
+ * @example
+ * getDateFromString("2024-01-01", { format: "YYYY-MM-DD" })
+ * // Date(2024, 0, 1)
+ */
 export function getDateFromString(date: string, options?: DateAsStringOptions): Date {
   if (!options) {
     const d = new Date(date);
